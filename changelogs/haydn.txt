@@ -6,6 +6,9 @@ Build Date: 2026-11-04
 
 Changelog:
 - Android 17 / SDK 37 (LineageOS 24.0 base)
+- Critical Stability Fix:
+  * Resolved SystemUI broadcast receiver accumulation leak in SignalIconLoader
+  * Fixed crash and spontaneous reboot occurring on incoming notifications (IllegalStateException: Too many receivers, total of 1000)
 - Xiaomi Dolby Atmos (XiaomiDolby-15) Integration:
   * Full working Master On/Off switch that cleanly toggles DSP audio effects
   * Quick Settings tile, Dynamic/Movie/Music/Voice presets, and 10-band equalizer
