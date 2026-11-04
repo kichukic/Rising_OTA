@@ -1,21 +1,13 @@
 {
   "response": [
     {
-      "maintainer": "Kishor TH",
-      "oem": "Xiaomi",
-      "device": "haydn",
-      "filename": "RisingOS-9-261104-0239-GAPPS-COMMUNITY-haydn-ota.zip",
-      "download": "https://sourceforge.net/projects/risingos-revived/files/9.x/GAPPS/haydn/RisingOS-9-261104-0239-GAPPS-COMMUNITY-haydn-ota.zip/download",
-      "timestamp": 1793759851,
-      "md5": "9f7972fb90f28fc01c7a6883781a1e86",
-      "sha256": "42ab8011ecd4d3a1f0c732474251ac343ea7c8dbbf26d00fbdee4839205ceeac",
-      "size": 3760683733,
-      "version": "9-elefthería",
-      "buildtype": "STABLE",
-      "forum": "https://t.me/HI_JACK_U",
-      "recovery": "",
-      "paypal": "",
-      "telegram": "https://t.me/HI_JACK_U"
+      "datetime": 1793766581,
+      "filename": "RisingOS-9-261104-0357-GAPPS-COMMUNITY-haydn-ota.zip",
+      "id": "539d44a6e884f4a0bafb98b6e109da98c1fa16e922507f5cd65e5226737668a8",
+      "romtype": "official",
+      "size": 3592299363,
+      "url": "https://github.com/kichukic/Rising_OTA/releases/download/v9-haydn/RisingOS-9-261104-0357-GAPPS-COMMUNITY-haydn-ota.zip",
+      "version": "9.0"
     }
   ]
 }
