@@ -6,13 +6,20 @@ Build Date: 2026-11-04
 
 Changelog:
 - Android 17 / SDK 37 (LineageOS 24.0 base)
+- Xiaomi Dolby Atmos (XiaomiDolby-15) Integration:
+  * Full working Master On/Off switch that cleanly toggles DSP audio effects
+  * Quick Settings tile, Dynamic/Movie/Music/Voice presets, and 10-band equalizer
+  * DSPVolumeSynchronizer included for volume sync
+- HyperOS Gallery & MediaEditor:
+  * Fixed ColorStateList resource lookup crash on launch
+  * Native 64-bit uncompressed JNI libraries & 4K page size alignment
+  * Hidden API whitelisting and micloud-sdk integration
+- Native Play Integrity & Banking App Cloaking (No root modules required):
+  * Hardware TEE bootHash matched to ro.boot.vbmeta.digest and zero-key spoofed
+  * Auto-spoofing enabled by default for all user-installed applications
+  * ADB & Developer Options hidden (returns '0' to third-party detector apps)
+  * Root and hooking manager packages (Magisk, KernelSU, LSPosed) hidden from package queries
 - Full Leica MIUI Camera 5.0 natively integrated with all photo/video modes
-- Fixed HyperOS Gallery & MediaEditor app crashes:
-  * 4096-byte page alignment and uncompressed 64-bit JNI libraries
-  * Hidden API whitelisting for com.miui.gallery and com.miui.mediaeditor
-  * Integrated micloud-sdk and proper priv-app permissions
 - Integrated hijackCUT 4K Video Editor
 - Kernel 5.4.302-qgki with KernelSU Next & SUSFS hooks
 - Official Release-Keys Signed Build
-- SEPolicy security policy updates and camera provider fixes
-- High-performance battery & thermal optimizations for SM8350
