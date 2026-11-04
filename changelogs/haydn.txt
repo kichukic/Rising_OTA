@@ -14,15 +14,19 @@ Changelog:
   * Quick Settings tile, Dynamic/Movie/Music/Voice presets, and 10-band equalizer
   * DSPVolumeSynchronizer included for volume sync
 - HyperOS Gallery & MediaEditor:
+  * Patched HyperOSEditor smali to completely bypass Xiaomi account login check
+  * Photo adjustment tools, filters, and editor features work 100% offline without signing in
   * Fixed ColorStateList resource lookup crash on launch
   * Native 64-bit uncompressed JNI libraries & 4K page size alignment
-  * Hidden API whitelisting and micloud-sdk integration
-- Native Play Integrity & Banking App Cloaking (No root modules required):
+- Native Play Integrity & Strong Keybox Integration:
+  * Yurikey67 embedded as default system keybox in /product/etc/security/keybox.xml
+  * AxSpoofManager auto-seeds default keybox into TrickyStore on initial setup
+  * Full user override preserved: users can import any custom keybox in Settings anytime
   * Hardware TEE bootHash matched to ro.boot.vbmeta.digest and zero-key spoofed
   * Auto-spoofing enabled by default for all user-installed applications
   * ADB & Developer Options hidden (returns '0' to third-party detector apps)
   * Root and hooking manager packages (Magisk, KernelSU, LSPosed) hidden from package queries
-- Full Leica MIUI Camera 5.0 natively integrated with all photo/video modes
+- Leica MIUI Camera 5.0 natively integrated with all photo/video modes
 - Integrated hijackCUT 4K Video Editor
-- Kernel 5.4.302-qgki with KernelSU Next & SUSFS hooks
+- Kernel 5.4.302-qgki with BakaSU 1.5.5 & SUSFS hooks (preinstalled manager hook 35257 enabled)
 - Official Release-Keys Signed Build
