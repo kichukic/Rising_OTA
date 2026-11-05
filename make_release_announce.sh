@@ -49,17 +49,19 @@ def s(k, d=""):
 
 def fmt_size(b):
     try:
-        b = int(b)
+        b = float(b)
         for u in ["B","KB","MB","GB"]:
-            if b < 1024: return f"{b} {u}"
+            if b < 1024:
+                return f"{b:.2f} {u}" if u in ["MB","GB"] else f"{int(b)} {u}"
             b /= 1024
         return f"{b:.2f} TB"
     except: return str(b)
 
 ts = r.get("timestamp") or r.get("datetime") or 0
 try:
-    date_str = datetime.datetime.utcfromtimestamp(int(ts)).strftime("%d/%m/%y")
-    human = datetime.datetime.utcfromtimestamp(int(ts)).strftime("%Y-%m-%d %H:%M UTC")
+    dt = datetime.datetime.fromtimestamp(int(ts), datetime.timezone.utc)
+    date_str = dt.strftime("%d/%m/%y")
+    human = dt.strftime("%Y-%m-%d %H:%M UTC")
 except:
     date_str = s("filename").split("-")[2] if "-" in s("filename") else "N/A"
     human = date_str
@@ -127,7 +129,7 @@ MANUAL_NOTES=""
 OUTPUT=$(cat <<EOF
 #risingos #haydn #a17
 RisingOS-v$F_VERSION [$F_BUILDTYPE] | $F_DEVICE | Unofficial
-Updated: $F_DATE'
+Updated: $F_DATE
 Build: $F_FILENAME
 Size: $F_SIZE
 
