@@ -115,7 +115,7 @@ fi
 # --- Placeholders you can edit per-build ---
 # Edit these links once, reuse every time:
 CHANGELOG_URL="https://github.com/kichukic/Rising_OTA/blob/main/changelogs/haydn.txt"
-FLASHING_URL="https://wiki.risingtechsect.com/"  # TODO: replace with your flashing guide URL
+FLASHING_URL="https://github.com/kichukic/Rising_OTA/blob/main/FLASHING.md"
 SUPPORT_URL="https://t.me/HI_JACK_U"             # TODO: replace with your support group, e.g. https://t.me/Mi11XProOfficial
 SUPPORT_LABEL="Support Group"                    # or "Join: @YourChannel"
 
