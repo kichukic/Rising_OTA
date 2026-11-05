@@ -27,7 +27,7 @@ Changelog:
 - Critical Stability Fix:
   * Resolved SystemUI broadcast receiver accumulation leak in SignalIconLoader
   * Fixed crash and spontaneous reboot occurring on incoming notifications
-- Xiaomi Dolby Atmos (XiaomiDolby-15) Integration:
+- Motorola Dolby Atmos (MotoDolbyDax3) Integration:
   * Full working Master On/Off switch that cleanly toggles DSP audio effects
   * Quick Settings tile, Dynamic/Movie/Music/Voice presets, and 10-band equalizer
   * DSPVolumeSynchronizer included for volume sync
