@@ -1,14 +1,32 @@
 ========================================
 RisingOS 9 (elefthería) for Xiaomi Mi 11X Pro / Redmi K40 Pro / Mi 11i (haydn)
 Maintainer: Kishor TH (@HI_JACK_U)
-Build Date: 2026-11-04
+Build Date: 2026-11-05
 ========================================
 
 Changelog:
 - Android 17 / SDK 37 (LineageOS 24.0 base)
+- Production User Build:
+  * Switched from userdebug to authentic production 'user' build variant
+  * ro.debuggable=0, JDWP debugging interfaces removed
+  * Maximum AOT/PGO runtime performance, reduced idle power consumption
+  * Clean out-of-the-box passing for banking, financial, and enterprise apps
+- Anti-Reboot Kernel Stability Hardening:
+  * Disabled kernel panic-on-oops (CONFIG_PANIC_ON_OOPS=n)
+  * Disabled Qualcomm watchdog bite on panic (CONFIG_QCOM_FORCE_WDOG_BITE_ON_PANIC=n)
+  * Disabled SSR notification timeout panic (CONFIG_PANIC_ON_SSR_NOTIF_TIMEOUT=n)
+  * Set panic timeout to 0 (CONFIG_PANIC_TIMEOUT=0)
+  * Enforced panic_on_oops=0 and panic=0 at early-boot in init.qcom.rc
+  * Non-critical driver hiccups and subsystem timeouts recover silently without phone crashes or random reboots
+- Stutter & Micro-Lag Elimination (RAM & ZRAM Tuning):
+  * Disabled ZRAM page deduplication (use_dedup = 0) in post-boot scripts
+  * Eliminated continuous CPU memory page hashing overhead for smooth UI frame rates
+  * Upgraded Dalvik VM heap profile to 8GB/12GB (phone-xhdpi-8192-dalvik-heap.mk)
+  * Expanded app heap growth limit to 384MB and max free memory to 64MB
+  * Prevents aggressive background app kills and reloading
 - Critical Stability Fix:
   * Resolved SystemUI broadcast receiver accumulation leak in SignalIconLoader
-  * Fixed crash and spontaneous reboot occurring on incoming notifications (IllegalStateException: Too many receivers, total of 1000)
+  * Fixed crash and spontaneous reboot occurring on incoming notifications
 - Xiaomi Dolby Atmos (XiaomiDolby-15) Integration:
   * Full working Master On/Off switch that cleanly toggles DSP audio effects
   * Quick Settings tile, Dynamic/Movie/Music/Voice presets, and 10-band equalizer
