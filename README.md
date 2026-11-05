@@ -89,6 +89,14 @@ Official RisingOS 9 (Android 17 / SDK 37) OTA Update Repository.
   - Enabled 24-bit / 192kHz Hi-Fi audio output pipeline (`vendor.audio.feature.hifi_audio.enable=true`)
   - Doubled audio offload buffer size to 64KB (`vendor.audio.offload.buffer.size.kb=64`) to cut CPU wakeups in half
   - Enabled 3-level granular vibration intensity slider (Low, Medium, High) in Settings
+- **Bluetooth Audio Bitrate & Codec Boost:**
+  - Uncapped AAC Bluetooth streaming bitrate and enabled VBR frame control
+  - Set default LDAC high-resolution streaming bitrate to 990 kbps (`persist.bluetooth.ldac.rate=990`)
+  - Decoupled Bluetooth absolute volume (`persist.bluetooth.disableabsvol=true`) for independent headphone amplifier gain
+  - Disabled Bluetooth snoop logging daemon to eliminate background CPU overhead
+- **Hyper-Fluid UI Animation Physics:**
+  - Defaulted window, transition, and animator scales to 0.8x spring physics for silky-smooth 120Hz gesture response
+  - Calibrated framework activity and window animation timings for instant responsiveness
 - **Official Release-Keys Signed Build**
 
 ---
