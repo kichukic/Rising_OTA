@@ -51,4 +51,21 @@ Changelog:
 - Leica MIUI Camera 5.0 natively integrated with all photo/video modes
 - Integrated hijackCUT 4K Video Editor
 - Kernel 5.4.302-qgki with BakaSU 1.5.5 & SUSFS hooks (preinstalled manager hook 35257 enabled)
+- UFS 3.1 I/O Performance & Kyber Scheduler:
+  * Enabled CONFIG_MQ_IOSCHED_KYBER=y and CONFIG_MQ_IOSCHED_DEADLINE=y in kernel
+  * Automated block device queue tuning for all UFS 3.1 LUNs (/sys/block/sd*)
+  * Tuned read-ahead buffer to optimal 128KB for peak 4K random read throughput
+  * Disabled storage write entropy contribution (add_random=0) to eliminate CPU spinlocks
+  * Disabled redundant I/O statistics accounting (iostats=0) to reduce interrupt latency
+  * Streamlined queue depth to 64 requests
+- ART Bytecode Compiler & 120Hz Smoothness:
+  * Profile-guided AOT compilation (speed-profile) enabled for app installation and background dexopt
+  * Scaled parallel dex2oat compilation threads to 6 (and 8 for boot) across Kryo 680 cores
+  * Fast boot after OTA updates (pm.dexopt.boot-after-ota=verify)
+  * SurfaceFlinger frame pacing optimized for 120Hz refresh rate (set_touch_timer_ms=200, latch_unsignaled=1)
+  * Increased Home Launcher RAM pinning to 25MB (config_pinnerHomePinBytes=26214400) to eliminate redraws
+- Hi-Fi Audio & 3-Level Haptics:
+  * Enabled 24-bit / 192kHz Hi-Fi audio output pipeline (vendor.audio.feature.hifi_audio.enable=true)
+  * Doubled audio offload buffer size to 64KB (vendor.audio.offload.buffer.size.kb=64) to cut CPU wakeups in half
+  * Enabled 3-level granular vibration intensity slider (Low, Medium, High) in Settings
 - Official Release-Keys Signed Build
