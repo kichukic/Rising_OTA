@@ -4,22 +4,22 @@
       "maintainer": "Kishor TH",
       "oem": "Xiaomi",
       "device": "haydn",
-      "filename": "RisingOS-9-261106-1408-GAPPS-COMMUNITY-haydn-ota.zip",
-      "download": "https://downloads.sourceforge.net/project/rising-unofficial/RisingOS-9-261106-1408-GAPPS-COMMUNITY-haydn-ota.zip",
-      "timestamp": 1793973996,
-      "md5": "c842f6834cd18a91afc861ee7c5eda18",
-      "sha256": "09c109b3a4ef5c4f919a65b8a98e21fdb3d06c145760f70f35ab6a9b240d60b9",
-      "size": 3627339418,
+      "filename": "RisingOS-9-261106-2008-GAPPS-COMMUNITY-haydn-ota.zip",
+      "download": "https://downloads.sourceforge.net/project/rising-unofficial/RisingOS-9-261106-2008-GAPPS-COMMUNITY-haydn-ota.zip",
+      "timestamp": 1793995645,
+      "md5": "78ff77e61c7c1ddab670f2048d1d0b6c",
+      "sha256": "03f141ab3136ff651c04e36edce25e59840b6a4e8db821a97745c154b97a4df8",
+      "size": 3613514660,
       "version": "9.0",
       "buildtype": "COMMUNITY",
       "forum": "",
       "recovery": "",
       "paypal": "",
       "telegram": "https://t.me/HI_JACK_U",
-      "datetime": 1793973996,
-      "id": "09c109b3a4ef5c4f919a65b8a98e21fdb3d06c145760f70f35ab6a9b240d60b9",
+      "datetime": 1793995645,
+      "id": "03f141ab3136ff651c04e36edce25e59840b6a4e8db821a97745c154b97a4df8",
       "romtype": "official",
-      "url": "https://downloads.sourceforge.net/project/rising-unofficial/RisingOS-9-261106-1408-GAPPS-COMMUNITY-haydn-ota.zip"
+      "url": "https://downloads.sourceforge.net/project/rising-unofficial/RisingOS-9-261106-2008-GAPPS-COMMUNITY-haydn-ota.zip"
     }
   ]
 }
