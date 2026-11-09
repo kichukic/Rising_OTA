@@ -24,7 +24,14 @@ Official RisingOS 9 (Android 17 / SDK 37) OTA Update Repository.
 
 ---
 
-## 📝 Changelog (2026-11-05)
+## 📝 Detailed Changelog
+
+👉 **[View Full Chronological Changelog (CHANGELOG.md)](./CHANGELOG.md)** with complete breakdowns for all release milestones:
+- **`[2026-11-10]`** — Battery Powerhouse (7.5-9.5h SOT), Schedutil Rate Limits & Official Release Edition
+- **`[2026-11-07]`** — HyperOS Product App Permissions & Material You Color Fallbacks
+- **`[2026-11-06]`** — Offline Gallery Patching & Resigned Prebuilts
+- **`[2026-11-05]`** — Audio, Haptics, UFS 3.1 & TCP BBR Optimization
+- **`[2026-11-04]`** — RisingOS 9 Bringup, Play Integrity & SystemUI Freeze Cures
 
 - **Android 17 / SDK 37 (LineageOS 24.0 base)**
 - **Production User Build:**
