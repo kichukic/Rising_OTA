@@ -1,4 +1,4 @@
-# 📱 Flashing Instructions for RisingOS 9 (Android 17)
+# Flashing Instructions for RisingOS 9 (Android 17)
 
 **Device:** Xiaomi Mi 11X Pro / Redmi K40 Pro / Mi 11i (`haydn` / `haydnin`)  
 **Maintainer:** Kishor TH ([@HI_JACK_U](https://t.me/HI_JACK_U))  
@@ -7,7 +7,7 @@
 
 ---
 
-## ⚠️ Important Prerequisites & Requirements
+## Important Prerequisites & Requirements
 
 1. **Unlocked Bootloader:** Ensure your device's bootloader is already unlocked.
 2. **Backup:** Backup all important personal data before proceeding with a Clean Flash. Formatting data will erase everything on the device.
@@ -20,7 +20,7 @@
 
 ---
 
-## 🧹 Clean Flash (Recommended for First-Time Install)
+## Clean Flash (Recommended for First-Time Install)
 
 Follow these steps if you are coming from stock HyperOS/MIUI or any other custom ROM:
 
@@ -72,7 +72,7 @@ adb sideload RisingOS-9-XXXXXXXX-XXXX-GAPPS-COMMUNITY-haydn-ota.zip
 
 ---
 
-## 🔄 Dirty Flash (Updating between RisingOS 9 Builds)
+## Dirty Flash (Updating between RisingOS 9 Builds)
 
 Follow these steps if you are updating from an earlier build of RisingOS 9:
 
@@ -90,7 +90,7 @@ Follow these steps if you are updating from an earlier build of RisingOS 9:
 
 ---
 
-## 🛡️ Play Integrity & Banking Apps Setup
+## Play Integrity & Banking Apps Setup
 
 RisingOS 9 includes native hardware TEE spoofing and cloaking:
 - **Default Strong Keybox:** `Yurikey67` is integrated into `/product/etc/security/keybox.xml` and auto-seeded into TrickyStore.
@@ -100,7 +100,7 @@ RisingOS 9 includes native hardware TEE spoofing and cloaking:
 
 ---
 
-## 💬 Support & Links
+## Support & Links
 
 - **Telegram Support:** [@HI_JACK_U](https://t.me/HI_JACK_U)
 - **OTA Updates Repository:** [kichukic/Rising_OTA](https://github.com/kichukic/Rising_OTA)

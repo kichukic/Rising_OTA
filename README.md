@@ -9,7 +9,7 @@ Official RisingOS 9 (Android 17 / SDK 37) OTA Update Repository.
 
 ---
 
-## 📦 Latest Release Information
+## Latest Release Information
 
 | Item | Details |
 | :--- | :--- |
@@ -24,9 +24,9 @@ Official RisingOS 9 (Android 17 / SDK 37) OTA Update Repository.
 
 ---
 
-## 📝 Detailed Changelog
+## Detailed Changelog
 
-👉 **[View Full Chronological Changelog (CHANGELOG.md)](./CHANGELOG.md)** with complete breakdowns for all release milestones:
+**[View Full Chronological Changelog (CHANGELOG.md)](./CHANGELOG.md)** with complete breakdowns for all release milestones:
 - **`[2026-11-10]`** — Battery Powerhouse (7.5-9.5h SOT), Schedutil Rate Limits & Community Signed Edition
 - **`[2026-11-07]`** — HyperOS Product App Permissions & Material You Color Fallbacks
 - **`[2026-11-06]`** — Offline Gallery Patching & Resigned Prebuilts
@@ -108,7 +108,7 @@ Official RisingOS 9 (Android 17 / SDK 37) OTA Update Repository.
 
 ---
 
-## 📖 Documentation & Links
+## Documentation & Links
 - **Flashing Guide:** [`FLASHING.md`](FLASHING.md)
 - **Raw Changelog:** [`changelogs/haydn.txt`](changelogs/haydn.txt)
 - **OTA Metadata:** [`haydn.json`](haydn.json)
