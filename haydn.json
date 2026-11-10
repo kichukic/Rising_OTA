@@ -4,8 +4,8 @@
       "maintainer": "Kishor TH",
       "oem": "Xiaomi",
       "device": "haydn",
-      "filename": "RisingOS-9-261110-1027-GAPPS-COMMUNITY-haydn-ota.zip",
-      "download": "https://downloads.sourceforge.net/project/rising-unofficial/RisingOS-9-261110-1027-GAPPS-COMMUNITY-haydn-ota.zip",
+      "filename": "RisingOS-9-261110-1027-GAPPS-COMMUNITY-haydn-battery_sauce-ota.zip",
+      "download": "https://downloads.sourceforge.net/project/rising-unofficial/RisingOS-9-261110-1027-GAPPS-COMMUNITY-haydn-battery_sauce-ota.zip",
       "timestamp": 1794307778,
       "md5": "b654d5985a19bbfc58baad5331414767",
       "sha256": "aad835e224a70023e51e6b60008ff81da881d3da3a3a676e38af386e7a028bed",
@@ -19,7 +19,7 @@
       "datetime": 1794307778,
       "id": "aad835e224a70023e51e6b60008ff81da881d3da3a3a676e38af386e7a028bed",
       "romtype": "community",
-      "url": "https://downloads.sourceforge.net/project/rising-unofficial/RisingOS-9-261110-1027-GAPPS-COMMUNITY-haydn-ota.zip"
+      "url": "https://downloads.sourceforge.net/project/rising-unofficial/RisingOS-9-261110-1027-GAPPS-COMMUNITY-haydn-battery_sauce-ota.zip"
     }
   ]
 }
