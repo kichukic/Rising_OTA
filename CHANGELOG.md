@@ -11,6 +11,36 @@
 
 ## Latest Release
 
+### [2026-11-10] — RisingOS 9 Battery Sauce Edition Hotfix (SoundTrigger / Audio Freeze Cure & Full Multimedia)
+
+* **Filename:** `RisingOS-9-261110-1851-GAPPS-COMMUNITY-haydn-battery_sauce-ota.zip`
+* **Size:** 3,613,147,774 bytes (~3.37 GB)
+* **MD5:** `0d29aea40dfe1f38d10a6930507670f8`
+* **SHA256:** `bb39998068451a34cb012062cb51511371c498244cf523e03a950ade185f396a`
+* **Boot Image:** `boot.img` (201,326,592 bytes, Linux 5.4.302-qgki with BakaSU embedded)
+* **OTA URL:** Available via OTA Updater (`kichukic/Rising_OTA`) and SourceForge FRS
+
+#### 1. Audio / SoundTrigger HAL Freeze Resolution
+* **Qualcomm LSM Sound Trigger Offload Disabled:** Set `BOARD_SUPPORTS_SOUND_TRIGGER := false`, `BOARD_SUPPORTS_OPENSOURCE_STHAL := false`, and `AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := false` in `sm8350-common`.
+* **HAL Removal:** Dropped `sound_trigger.primary.lahaina` and `android.hardware.soundtrigger@2.3-impl` from product packages and device HIDL manifest.
+* **Prop Enforcement:** Set `ro.vendor.audio.soundtrigger=none` in `vendor.prop`.
+* **Framework Crash-Loop Guard:** Patched `SoundTriggerHalEnforcer.java` in `frameworks/base` to catch `HalException` and return a recoverable error instead of triggering destructive audio HAL reboots.
+* **Result:** Completely eliminates the 3-second play / 1-second freeze loop and status bar touch latency, guaranteeing continuous background playback and smooth gesture responsiveness across all lock/unlock states.
+
+#### 2. Restored Multimedia: Leica Camera & Motorola Dolby Atmos
+* **Leica MIUI Camera 5.0 (Lucifer-Alive 17.0):** Complete 108MP HM2, 8MP ultra-wide, 5MP telemacro, Leica authentic/vibrant color profiles, 8K video, Director's mode.
+* **Motorola Dolby Atmos DAX3 (swiitch-OFF-Lab moto-1.1):** Native hardware DMS service, 10-band equalizer, spatial audio, and UI presets.
+
+#### 3. Battery Powerhouse Engine & Governor Tuning
+* Schedutil rate limits (4000µs up / 500µs down on Cortex-X1 Prime, 2000µs up / 1000µs down on A78 Mid, 1000µs up / 2000µs down on A55 Little).
+* Touch boost dampening to 80ms (`persist.sys.powerhal.interaction.max_boost=80`).
+* Expensive 58px Gaussian window blur shaders disabled.
+* In-kernel app freezer (cgroup v2) and aggressive Quick Doze.
+
+---
+
+## Previous Updates
+
 ### [2026-11-10] — RisingOS 9 Battery Sauce Edition (Community User Signed — Full Audio & Camera Restored)
 
 * **Filename:** `RisingOS-9-261110-1237-GAPPS-COMMUNITY-haydn-battery_sauce-ota.zip`
